@@ -8,7 +8,7 @@ router.get('/', Auth, (req, res) => {
     
     Post.findAll({
         where: {
-          // use the ID from the session
+        
           user_id: req.session.user_id
         },
         attributes: [
@@ -33,7 +33,7 @@ router.get('/', Auth, (req, res) => {
         ]
       })
         .then(dbPostData => {
-          // serialize data before passing to template
+          
           const posts = dbPostData.map(post => post.get({ plain: true }));
           res.render('dashboard', { posts, loggedIn: true });
         })
