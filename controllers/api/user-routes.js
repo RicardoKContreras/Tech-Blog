@@ -21,7 +21,7 @@ router.get('/:id', (req, res) => {
       include: [
         {
           model: Post,
-          attributes: ['id', 'title', 'post_url', 'created_at']
+          attributes: ['id', 'title', 'content', 'created_at']
         },
 
     // include the Comment model here:
@@ -32,13 +32,6 @@ router.get('/:id', (req, res) => {
             model: Post,
             attributes: ['title']
           }
-        },
-
-        {
-          model: Post,
-          attributes: ['title'],
-          through: Vote,
-          as: 'voted_posts'
         }
       ],
 

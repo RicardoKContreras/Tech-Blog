@@ -39,3 +39,13 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+
+## Notes
+- Created the `schema database` for `tech_blog`
+- Using the `MySQL2` and `Sequelize` packages to connect to `MySQL database`
+- Created an `Express.js API` for the `controllers/routes`
+- Created Models for `Comment`, `Post`, and `User`
+- Using the `dotenv package` to use the environment variables along with the `bcrypt package`
+- Using the `express-session` and `connect-session-sequelize` package for authentication.
+- Created handlebars for the `homepage, login, single-post, main-site, edit-post, comments, and edit-post`
+- Destructed different functionality into multiple javascript files inside the folders of `controllers`, `public/javascript`, and `utls`
