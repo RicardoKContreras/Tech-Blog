@@ -49,3 +49,11 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 - Using the `express-session` and `connect-session-sequelize` package for authentication.
 - Created handlebars for the `homepage, login, single-post, main-site, edit-post, comments, and edit-post`
 - Destructed different functionality into multiple javascript files inside the folders of `controllers`, `public/javascript`, and `utls`
+Deployed app: https://peaceful-spire-23664.herokuapp.com/
+
+
+
+
+![image](https://user-images.githubusercontent.com/104086686/190360062-5a22d757-d899-4df1-b7ca-46e291c9e7e8.png)
+![image](https://user-images.githubusercontent.com/104086686/190360165-a32afb2e-0bf9-42df-b920-3916a4cadaeb.png)
+
